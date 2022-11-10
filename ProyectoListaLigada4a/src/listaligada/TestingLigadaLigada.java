@@ -52,7 +52,22 @@ public class TestingLigadaLigada {
         System.out.println("------------------------------");
         System.out.println("Contenido de la lista ligada: ");
         lista.printList();
-*/
-        
+       */
+         
+        //Otra lista ligada, pero ahora almacenadas en String
+        ListaLigada <String> lista2 = new ListaLigada<>();
+        System.out.println("---Creando Nueva lista de String ---");
+        for(;;){
+            System.out.println("Escribe datos String para agregar a la lista: ");
+            entrada = bufer.readLine();
+            lista2.add(entrada);
+            System.out.println("¿Quieres insertar más datos?");
+             entrada=bufer.readLine();
+            respuesta=entrada.charAt(0);
+            if(respuesta=='n' || respuesta=='N')
+            break;
+        }
+        System.out.println("Contenido de la lista de Strings:");
+        lista2.printList();
     }
 }
